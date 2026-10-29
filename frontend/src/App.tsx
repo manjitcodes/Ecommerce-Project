@@ -1,12 +1,8 @@
-import SignUp from "./components/SignUp";
-import Login from "./components/Login";
+import CreatorProfilePage from "./pages/CreatorProfilePage";
 
 function App() {
   return (
-    <div>
-      <SignUp />
-      <Login />
-    </div>
+    <CreatorProfilePage />
   );
 }
 
