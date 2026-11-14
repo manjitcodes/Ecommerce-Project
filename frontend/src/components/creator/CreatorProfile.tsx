@@ -16,7 +16,9 @@ export interface CreatorProfileProps {
 
 export function CreatorProfile({ creator, posts, onFollow, onJoinMembership }: CreatorProfileProps) {
   const [activeTab, setActiveTab] = useState<CreatorTab>("overview");
-  const [isFollowing, setIsFollowing] = useState(creator.isFollowing);
+ const [isFollowing, setIsFollowing] = useState(
+  creator.isFollowing ?? false
+);
 
   const handleFollow = () => {
     const next = !isFollowing;
